@@ -1,11 +1,15 @@
-<html>
-  <body>
-    <h1>Cookies and Sessions Demo</h1>
-    <ul>
-      <li><a href="/form-cookie">Cookie Demo</a></li>
-      <li><a href="/form-session">Session Demo</a></li>
-    </ul>
-    
-    {% include "state-debug.html" %}
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="display-4">Auth Demo</h1>
+<p class="lead">Hiya.</p>
+
+<ul>
+  <li><a href="/secret">Top Secret Area</a></li>
+</ul>
+
+<p>
+  Number of visits: {{ n_visits }}
+</p>
+
+{% endblock %}

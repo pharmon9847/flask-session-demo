@@ -31,8 +31,7 @@ def res_demo():
     content = "<h1>HELLO!!</h1>"
     res = make_response(content)
     res.set_cookie("jolly_rancher_flavor", "grape")
-    return res
-
+    return response
 
 ################################################################
 # Routes that demonstrate cookies
